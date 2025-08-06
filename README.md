@@ -1,4 +1,4 @@
-# Love Page - Site Romântico Interativo
+# Love Page 
 
 Um site romântico criativo com animações de flores, modal interativo e seções especiais para celebrar o amor!
 
@@ -28,7 +28,7 @@ O site apresenta:
 
 ```bash
 git clone https://github.com/HenryyDev/love-page.git
-cd love-page1
+cd love-page
 ```
 
 2. Abra o arquivo `index.html` no seu navegador preferido
@@ -120,3 +120,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ---
 
 _Feito com por [HenryyDev](https://github.com/HenryyDev)_
+
