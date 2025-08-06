@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMG LOVE</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/minecraft-heart.svg"
+    />
+    <link rel="stylesheet" href="love.css" />
+    <script src="love.js" defer></script>
+  </head>
+  <body>
+    <!-- Canvas de fundo para fogos -->
+    <canvas id="canvas"></canvas>
+
+    <div class="container-image"><img src="../assets/nois.JPEG" alt="" /></div>
+    <div class="container-love">
+      <h1>o quanto você me ama</h1>
+
+      <!-- Barra de Progresso -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="progress-text">
+        <span>Nível de amor:</span>
+        <span class="progress-text" id="progressText">0%</span>
+      </div>
+
+      <div class="wrap-btn">
+        <button class="button-56" role="button" id="brokenHeartButton">
+          <img src="../assets/coracao-partido.png" height="26" alt="" />
+        </button>
+        <button class="button-56" role="button" id="heartButton">
+          <img src="../assets/heart.png" height="24" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

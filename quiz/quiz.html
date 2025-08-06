@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="quiz.js" defer></script>
+    <link rel="stylesheet" href="quiz.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/minecraft-heart.svg"
+    />
+    <title>OMG LOVE</title>
+  </head>
+  <body>
+    <!-- Canvas de fundo para corações -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Tela inicial -->
+    <div id="startScreen" class="start-screen">
+      <h1>Vamos testar seu conhecimento sobre nosso relacionamento?</h1>
+      <button id="startQuizButton" class="button-56">Começar Quiz</button>
+    </div>
+
+    <!-- Tela do quiz -->
+    <div id="quizScreen" class="quiz-container hidden">
+      <div class="quiz-header">
+        <div class="progress-container">
+          <div class="progress-bar" id="quizProgress"></div>
+        </div>
+        <div class="question-counter">
+          <span id="currentQuestion">1</span> de
+          <span id="totalQuestions">5</span>
+        </div>
+      </div>
+
+      <div class="question-container">
+        <h2 id="questionText">Pergunta aparecerá aqui</h2>
+        <div class="options-container" id="optionsContainer">
+          <!-- Opções serão inseridas dinamicamente -->
+        </div>
+      </div>
+
+      <button id="nextButton" class="button-56 hidden">Próxima</button>
+    </div>
+
+    <!-- Tela de resultado -->
+    <div id="resultScreen" class="quiz-container hidden">
+      <h1>Resultado do Quiz</h1>
+      <div class="result-content">
+        <div class="score-display">
+          <span id="finalScore">0</span> de <span id="totalScore">5</span>
+        </div>
+        <div class="result-message" id="resultMessage">
+          <!-- Mensagem baseada na pontuação -->
+        </div>
+        <div class="result-actions">
+          <button id="restartButton" class="button-56">Tentar Novamente</button>
+          <button id="backToLoveButton" class="button-56">
+            <a href="../index.html">Voltar ao Início</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
